@@ -1,11 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entendendo o Desafio</title>
-</head>
-<body>
-    
-</body>
-</html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entendendo o Desafio</title>
+    </head>
+
+    <body>
+        <h1>Entendendo o Desafio</h1>
+        <hr />
+        <h2>Introdução ao HTML</h2>
+        <blockquote><i>"HTML is the universal language that allows you to create webpages, and that gives the web its underlying structure."</i></blockquote>
+        <blockquote>— Tim Berners-Lee, inventor da World Wide Web e criador do
+            HTML.</blockquote>
+        <h3>Índice</h3>
+        <ul>
+            <li>
+                <a href="#Inspetor">Inspetor de Elementos</a>
+            </li>
+            <li>
+                <a href="#Estrutura">Estrutura Básica do HTML</a>
+            </li>
+            <li>
+                <a href="#Falando">Falando sobre Tags</a>
+            </li>
+            <li>
+                <a href="#Atributos">Atributos das Tags</a>
+            </li>
+            <li>
+                <a href="#Textos">Textos</a>
+            </li>
+            <li>
+                <a href="#Listas">Listas Ordenadas e Não Ordenadas</a>
+            </li>
+            <li>
+                <a href="#Links">Links</a>
+            </li>
+            <li>
+                <a href="#Referencias">Referências</a>
+            </li>
+        </ul>
+        <h2 id="Inspetor">Inspetor de Elementos</h2>
+        <p>
+            O Inspetor de Elementos é uma ferramenta poderosa que está integrada
+            nos
+            navegadores modernos e permite que você examine e modifique o
+            código-fonte
+            <abbr title="Hypertext Markup Language"><mark>HTML</mark></abbr> e
+            <abbr
+                title="Cascading Style Sheets"><mark>CSS</mark></abbr> de uma
+            página web em
+            tempo real. Quando você
+            acessa oFF
+            Inspetor
+            de Elementos, ele exibe a estrutura HTML da página, mostrando como
+            os
+            diferentes elementos estão organizados, quais estilos estão
+            aplicados a
+            eles, e como eles interagem uns com os outros.
+        </p>
+        <p>
+            Ao utilizar o Inspetor, você pode clicar em qualquer elemento na
+            página
+            para ver o código HTML correspondente e os estilos CSS associados a
+            ele.
+            Isso é especialmente útil para desenvolvedores que desejam entender
+            como
+            uma página foi construída, testar mudanças no design ou depurar
+            problemas.
+            Além disso, o Inspetor de Elementos permite que você altere
+            temporariamente o HTML e o CSS para ver como essas mudanças
+            afetariam a
+            aparência e o comportamento da página, sem a necessidade de editar o
+            código original.
+        </p>
+        <p>
+            Essa ferramenta também é excelente para aprender sobre
+            desenvolvimento
+            web, pois você pode ver exemplos práticos de código em ação e
+            experimentar
+            com eles diretamente no navegador. O Inspetor de Elementos é
+            acessível
+            clicando com o botão direito em qualquer parte da página e
+            selecionando
+            "Inspecionar" ou "Inspecionar Elemento", dependendo do navegador. A
+            interface do Inspetor geralmente inclui uma árvore de elementos
+            HTML, um
+            painel de estilos CSS, e outras abas para trabalhar com JavaScript,
+            rede,
+            e outras funcionalidades avançadas.
+        </p>
+
+        <h2 id="Estrutura">Estrutura Básica do HTML</h2>
+        <p>
+            A estrutura básica de um documento HTML funciona como o esqueleto de
+            uma
+            página web, organizando seu conteúdo e determinando como ele será
+            exibido
+            no navegador. Ela começa com a linha &lt;!DOCTYPE html&gt;, que
+            indica ao
+            navegador que o documento utiliza HTML5. A seguir, a página é
+            envolvida
+            pela tag &lt;html&gt;, que serve como o elemento raiz. O atributo
+            lang="pt-BR" dentro dessa tag define o idioma como Português do
+            Brasil.
+        </p>
+        <p>
+            O conteúdo do HTML é dividido em duas seções principais:
+            &lt;head&gt; e
+            &lt;body&gt;. A seção &lt;head&gt; contém metadados, como a
+            codificação de
+            caracteres definida por &lt;meta charset="UTF-8"&gt; e a tag
+            &lt;meta
+            name="viewport" content="width=device-width, initial-scale=1.0"&gt;,
+            que
+            garante a responsividade da página em dispositivos móveis. Também no
+            &lt;head&gt;, a tag &lt;title&gt; define o título que aparecerá na
+            aba do
+            navegador.
+        </p>
+        <p>
+            A seção &lt;body&gt; abriga todo o conteúdo visível da página, como
+            textos, imagens, links e vídeos. Tags como &lt;h1&gt;, &lt;p&gt;, e
+            &lt;a&gt; são usadas para estruturar o conteúdo dentro do
+            &lt;body&gt;.
+            Essa estrutura básica é fundamental para que a página funcione
+            corretamente e possa ser expandida conforme necessário, à medida que
+            novos
+            elementos são adicionados ao site.
+        </p>
+        <h2 id="Falando">Falando sobre Tags</h2>
+        <p>
+            As tags são os blocos de construção fundamentais do HTML e definem a
+            estrutura e o conteúdo de uma página web. Cada tag é como uma
+            instrução
+            que diz ao navegador o que fazer com o conteúdo que está dentro
+            dela. Por
+            exemplo, a tag &lt;p&gt; é usada para definir um parágrafo de texto,
+            enquanto a tag &lt;a&gt;cria um link para outra página ou recurso.
+        </p>
+        <p>
+            Tags geralmente vêm em pares, com uma tag de abertura, como
+            &lt;h1&gt;, e
+            uma tag de fechamento correspondente, como &lt;/h1&gt;. O conteúdo
+            entre
+            essas tags é afetado pelas instruções da tag. Algumas tags, no
+            entanto,
+            são auto-fechadas e não precisam de uma tag de fechamento, como
+            &lt;img&gt; para imagens e &lt;br&gt; para quebras de linha.
+        </p>
+        <p>
+            As tags podem também ter atributos, que são informações adicionais
+            dentro
+            da tag de abertura que modificam o comportamento ou a aparência do
+            elemento. Por exemplo, na tag &lt;a
+            href="https://www.example.com"&gt;, o
+            atributo href especifica o destino do link.
+        </p>
+        <p>
+            Cada tag tem um propósito específico e é usada para organizar o
+            conteúdo
+            de maneira lógica e semântica. O uso correto de tags facilita a
+            interpretação do conteúdo pelos navegadores e também pelos motores
+            de
+            busca e leitores de tela, o que é crucial para acessibilidade e SEO
+            (Search Engine Optimization). Assim, entender e utilizar as tags de
+            forma
+            apropriada é essencial para criar páginas web bem estruturadas e
+            funcionais.
+        </p>
+        <h2 id="Atributos">Atributos das Tags</h2>
+        <p>
+            Atributos das tags em HTML são informações adicionais que você pode
+            adicionar dentro da tag de abertura para modificar o comportamento
+            ou a
+            aparência do elemento. Eles são escritos na forma de pares
+            chave-valor e
+            geralmente aparecem após o nome da tag. Por exemplo, na tag &lt;a
+            href="https://www.example.com"&gt;, o href é um atributo que define
+            o
+            destino do link.
+        </p>
+        <p>
+            Atributos são úteis para fornecer detalhes específicos sobre um
+            elemento.
+            Cada atributo tem um nome e um valor, separados por um sinal de
+            igual (=).
+            O valor geralmente é colocado entre aspas. Vamos ver alguns exemplos
+            e
+            como eles funcionam:
+        </p>
+        <p>
+            <ul>
+                <li>href: Em uma tag <a>, o atributo href especifica o URL para
+                        o qual o link deve apontar. Por exemplo: &lt;a
+                        href="https://www.example.com"&gt;Clique aqui&lt;/a&gt;
+                        cria um link que leva ao site "example.com".
+                    </li>
+                    <li>src: Em uma tag &lt;img&gt;, o atributo src define o
+                        caminho para a imagem que deve ser exibida. Por
+                        exemplo: &lt;img src="imagem.jpg"
+                        alt="Descrição da imagem"&gt; mostra a imagem
+                        "imagem.jpg" e fornece uma
+                        descrição alternativa.</li>
+                    <li>alt: Também na tag &lt;img&gt;, o atributo alt fornece
+                        uma descrição textual da imagem. Isso é importante
+                        para acessibilidade, pois permite que leitores de tela
+                        descrevam a imagem para pessoas com deficiências
+                        visuais.</li>
+                    <li>class: O atributo class é usado para aplicar estilos CSS
+                        a múltiplos elementos. Por exemplo: &lt;p
+                        class="importante"&gt;Texto importante&lt;/p&gt; pode
+                        ser estilizado usando CSS para todos os elementos com
+                        a classe "importante".</li>
+                </ul>
+            </p>
+            <p>
+                Os atributos ajudam a definir e controlar como os elementos HTML
+                são
+                apresentados e comportam-se. Eles são uma parte essencial do
+                desenvolvimento
+                web, pois permitem personalizar e estilizar os elementos de
+                acordo com as
+                necessidades do projeto.
+            </p>
+            <h2 id="Textos">Textos</h2>
+
+            <p>Em HTML, textos são adicionados usando várias tags que definem o
+                formato e a estrutura do conteúdo. A tag
+                &lt;p&gt; é usada para criar parágrafos, enquanto &lt;h1&gt; a
+                &lt;h6&gt; são usadas para criar cabeçalhos de
+                diferentes níveis, com &lt;h1&gt; sendo o mais importante e
+                &lt;h6&gt; o menos. Para enfatizar palavras ou
+                frases, você pode usar &lt;strong&gt; para negrito e &lt;em&gt;
+                para itálico. Links são criados com a tag
+                &lt;a&gt;, e listas, que podem ser ordenadas com &lt;ol&gt; ou
+                não ordenadas com &lt;ul&gt;, organizam itens com
+                &lt;li&gt;. Além disso, a tag &lt;blockquote&gt; é usada para
+                citações longas e &lt;code&gt; para trechos de
+                código. Essas tags ajudam a organizar e estilizar o texto em uma
+                página web, tornando-o mais legível e
+                estruturado.</p>
+
+            <h2 id="Listas">Listas Ordenadas e Não Ordenadas</h2>
+
+            <p>Em HTML, listas são usadas para agrupar itens de forma
+                organizada. Existem dois tipos principais: listas
+                ordenadas e não ordenadas. As listas ordenadas são criadas com a
+                tag &lt;ol&gt; e exibem os itens em uma
+                sequência numerada, como 1, 2, 3. Cada item da lista é definido
+                com a tag &lt;li&gt;. Já as listas não
+                ordenadas, criadas com a tag &lt;ul&gt;, apresentam os itens com
+                marcadores ou "bullets", sem uma ordem
+                específica. O conteúdo de cada item ainda é definido com
+                &lt;li&gt;, como nas listas ordenadas. Essas listas são
+                úteis para apresentar informações em um formato estruturado e
+                fácil de ler.</p>
+
+            <h2 id="Links">Links</h2>
+            <p>Em HTML, links são criados usando a tag &lt;a&gt;, que significa
+                "anchor" (âncora). Um link permite que o usuário navegue de uma
+                página para outra ou acesse recursos como arquivos e documentos.
+                O atributo href dentro da tag &lt;a&gt; define o destino do
+                link. Por exemplo,&lt;a href="https://www.example.com"&gt;Visite
+                o Example&lt;/a&gt; cria um link que, ao ser clicado, leva o
+                usuário para "example.com". O texto entre a abertura &lt;a&gt; e
+                o fechamento &lt;/a&gt; é o que será clicável. Links podem
+                apontar para páginas externas, internas (outras páginas dentro
+                do mesmo site), ou até mesmo para partes específicas de uma
+                página usando âncoras. Eles são fundamentais para a navegação e
+                conectividade na web.</p>
+            <h2 id="Referencias">Referencias</h2>
+            <ol>
+                <li>
+                    <a
+                        href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+                        target="_blank">Developer
+                        Mozilla</a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.cursoemvideo.com/#google_vignette"
+                        target="_blank">Curso
+                        em video</a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.youtube.com/watch?v=wjDteOd996I"
+                        target="_blank">DESENVOLVENDO
+                        MEU PRIMEIRO SITE COM HTML </a>
+                </li>
+            </ol>
+        </body>
+
+        <style>
+           body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+           }
+        </style>
+
+    </html>
